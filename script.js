@@ -2,7 +2,7 @@
 const accordionItemElements = document.querySelectorAll(".item");
 console.log(accordionItemElements);
 
-const openAccordionItem = function () {
+const openAccordionItem = function (accordionItemElements) {
   accordionItemElements.forEach((item) => {
     item.addEventListener("click", function (e) {
       const clicked = e.target.closest(".hidden-box");
