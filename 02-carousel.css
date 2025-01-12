@@ -23,18 +23,46 @@ body {
   line-height: 1;
 }
 
-.carousel {
+.container {
   width: 800px;
+  height: 264px;
   margin: 100px auto;
-  background-color: #087f5b;
+  position: relative;
+}
+
+.carousel--container {
+  position: relative;
+}
+
+.carousel {
   padding: 32px 48px 32px 80px;
   border-radius: 8px;
   color: #fff;
 
-  display: flex;
   align-items: center;
   gap: 68px;
-  position: relative;
+  display: none;
+  position: absolute;
+}
+
+.carousel--1 {
+  background-color: #087f5b;
+}
+
+.carousel--2 {
+  background-color: #fd7e14;
+}
+
+.carousel--3 {
+  background-color: #1c7ed6;
+}
+
+.carousel--4 {
+  background-color: #ae3ec9;
+}
+
+.carousel--show {
+  display: flex;
 }
 
 img {
